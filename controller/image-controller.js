@@ -15,7 +15,7 @@ export const uploadImage = async (request, response) => {
     response
       .status(200)
       .json({
-        path: `https://fsdababackend-production.up.railway.app/${process.env.PORT}/file/${file._id}`,
+        path: `https://fsdababackend-production.up.railway.app/file/${file._id}`,
       });
   } catch (error) {
     console.error(error.message);
